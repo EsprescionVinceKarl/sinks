@@ -1,6 +1,7 @@
 /* updated CSS */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -11,27 +12,42 @@ header {
     color: white;
     text-align: center;
     padding: 20px;
+    font-weight: 700;
 }
 
 nav {
     background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
-.nav-list {
+nav ul{
+    width: 95%;
+    list-style: none;
     display: flex;
-    justify-content: center;
-    padding: 10px 0;
-    
+    justify-content: flex-end;
+    align-items: center;   
 }
 
-.nav-list li {
-    margin: 0 20px;
+nav li {
+    height: 50px;
+    font-size: 20px;
 }
 
-.nav-list a {
-    color: white;
+nav a {
+    height: 100%;
+    padding: 0 30px;
     text-decoration: none;
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover {
+    background-color: white;
+}
+
+nav li:first-child {
+    margin-right: auto;
 }
 
 main {
